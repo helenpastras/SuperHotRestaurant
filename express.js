@@ -20,7 +20,13 @@ app.get("/tables", function(req, res) {
 
 app.get("/Make", function(req, res) {
     res.sendFile(path.join(__dirname, "Make.html"));
-})
+});
+
+//api routes
+app.post("/api/tables", function(req, res) {
+    var newReservation = req.body;
+    newReservation.routeName = newcharacter.name.replace(/\s+/g, "").toLowerCase();
+});
 
 //start the app
 app.listen(port, function() {
