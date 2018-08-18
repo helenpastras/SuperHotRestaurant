@@ -4,15 +4,21 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- <script src="\table.js"></script> -->
     
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div><h1><a class="view" href="">view page</a></h1></div>
+    <div class="container">
+            <div class="jumbotron">
+                    <h1>Supper Hot Restaurant</h1>
+                    <h3>Current Reservation and waiting List</h3>
+                    <hr>
+                    <a href="/"><button class="btn btn-danger btn-lg"><span class="fa fa-eye"></span> Make Reservation</button></a>
+                  </div>
+                  
     <div></div>
 <div class=list>
     <div class="reservation">
@@ -36,9 +42,11 @@
     </div>
     
 </div>
+    </div>
+    
     <script type="text/javascript">
         
-        $(".list").hide();
+        // $(".list").hide();
 $(".view").on("click",function(event){
     event.preventDefault();
 $(".view").hide();
