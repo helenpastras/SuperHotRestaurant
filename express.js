@@ -47,12 +47,13 @@ var waitlist = [
 //api routes
 app.post("/api/tables", function(req, res) {
     var newReservation = req.body;
-    newReservation.routeName = newcharacter.name.replace(/\s+/g, "").toLowerCase();
+    newReservation.routeName = newReservation.name.replace(/\s+/g, "").toLowerCase();
     tableArray.push(newReservation);
 });
 
 app.get("/api/tables", function(req, res) {
-    console.log(tableArray);
+    return res.json(reservations);
+    // return reservations;
 });
 
 //start the app
