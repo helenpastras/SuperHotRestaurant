@@ -18,10 +18,11 @@ app.get("/tables", function(req, res) {
     res.sendFile(path.join(__dirname, "tables.html"));
 });
 
-app.get("/")
+app.get("/Make", function(req, res) {
+    res.sendFile(path.join(__dirname, "Make.html"));
+})
 
 //start the app
 app.listen(port, function() {
     console.log("App listening on port " + port);
 });
-  
